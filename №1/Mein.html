@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="src/css/style.css" type="text/css"/>
+	<title>mein</title>
+
+</head>
+<body>
+	<nav class="nav normalFont">
+		<div class="header__logo boldFont">Liana Harper</div>
+	  <ul class="nav-menu">
+		  <li class="nav-menu__item header__btn-link"> <a href="index.html">Main</a></li>
+	  </ul>
+	  <button class="mobile-switch normalFont">Menu</button> 
+	  </nav>
+
+	<div class="container">
+		<div class="info normalFont">
+			<img class="info__img" src="src/img/Ellipse.png" alt="portrait">
+			<div class="info__name">Liana Harper</div>
+			<div class="info__Photographer">Photographer</div>		
+			<div class="info__region">London, United Kingdom of Britain</div>
+		</div>
+	</div>
+	
+    <script>
+
+        let isOpen = false;
+        let menuElement = document.querySelector('.nav-menu');
+
+        document.querySelector('.mobile-switch').addEventListener('click', () => {
+            if (isOpen) {
+                menuElement.classList.remove('open')
+                isOpen = false;
+            } else {
+                menuElement.classList.add('open')
+                isOpen = true;
+            }
+        })
+    </script>
+</body>
+</html>
